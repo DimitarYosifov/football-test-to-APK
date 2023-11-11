@@ -1,0 +1,42 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-admobpro": {
+      "ADMOB_ANDROID_APP_ID": "ca-app-pub-1315918873731360~8601037024",
+      "PLAY_SERVICES_VERSION": "20.4.0",
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-plugin-admob-free": {
+      "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713",
+      "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-promise-polyfill": {
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-admob-sdk": {
+      "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    }
+  }
+}

@@ -26,8 +26,17 @@ then add them to this project.
 1. All [VoltBuilder Documention](https://volt.build/docs/all/)
 1. All [Apache Cordova Documentation](https://cordova.apache.org/)
 1. The [VoltBuilder website](http://volt.build)
-
-
-
+https://www.youtube.com/watch?v=t3gc9_7JiTY&ab_channel=InventionTricks
+https://ratson.github.io/cordova-plugin-admob-free/variable/index.html#static-variable-rewardvideo
 
 https://www.npmjs.com/package/cordova-plugin-admobpro#usage
+cordova plugin add cordova-plugin-admobpro --save --variable PLAY_SERVICES_VERSION=20.4.0 --variable ADMOB_ANDROID_APP_ID="ca-app-pub-1315918873731360~8601037024"
+
+first banner id  = ca-app-pub-1315918873731360/8499883101
+my app id =        ca-app-pub-1315918873731360~8601037024
+
+default google banner unit id = ca-app-pub-3940256099942544/6300978111
+default google app id =         ca-app-pub-3940256099942544~3347511713
+
+
+cordova plugin add cordova-plugin-admob-free --save --variable PLAY_SERVICES_VERSION=20.4.0 --variable ADMOB_APP_ID="ca-app-pub-3940256099942544~3347511713"

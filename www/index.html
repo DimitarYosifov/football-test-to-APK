@@ -30,7 +30,7 @@
   <link href="https://fonts.googleapis.com/css?family=Risque&display=swap" rel="stylesheet">
 
   <!-- admob_simple -->
-  <script type="text/javascript" src="admob_simple.js"></script>
+  <!-- <script type="text/javascript" src="admob_simple.js"></script> -->
 
 
   <!-- ????? -->
@@ -38,8 +38,7 @@
 
 
 
-  <script defer src="bundle.js?658bf256efe621b1241c"></script>
-
+  <script defer src="bundle.js?c7ac6f7a21bc6e52182e"></script>
 
 </head>
 
@@ -57,83 +56,66 @@
 
 
   <img src="images/voltbuilder-150.png">
-  <!-- <h1>Here's a simple HelloWorld.</h1>
   <button style="margin:20px;font-size:20px;" onclick="showMessage()">Click me!</button> -->
-
   <script>
-// console.log(admob_simple);
-
-    // var admobid = {};
-    // if (/(android)/i.test(navigator.userAgent)) { // for android & amazon-fireos
-    //   admobid = {
-    //     banner: 'ca-app-pub-3940256099942544/6300978111', // or DFP format "/6253334/dfp_example_ad"
-    //     // interstitial: 'ca-app-pub-xxx/yyy'
-    //   };
-    // } else { // for ios
-    //   admobid = {
-    //     banner: 'ca-app-pub-3940256099942544/6300978111', // or DFP format "/6253334/dfp_example_ad"
-    //     interstitial: 'ca-app-pub-xxx/kkk'
-    //   };
-    // }
-
-    // console.log(AdMob);
-    // // preppare and load ad resource in background, e.g. at begining of game level
-    // if (AdMob) AdMob.prepareInterstitial({ adId: admobid.interstitial, autoShow: false });
-
-    // // show the interstitial later, e.g. at end of game level
-    // if (AdMob) AdMob.showInterstitial();
-
-
-
-
-
-
-
-
-
-
-
     document.addEventListener('deviceready', onDeviceReady, false);
+    document.addEventListener('testbanner', showBanner, false);
+    console.log(PIXI);
+
+    function showBanner() {
+      alert();
+      admob.banner.config({
+        id: "ca-app-pub-3940256099942544/6300978111",
+        autoShow: true,
+        isTesting: true
+      })
+      admob.banner.prepare();
+      admob.banner.show();
+    }
 
     function onDeviceReady() {
+
       // Cordova is now initialized. Have fun!
       console.log('instantiation complete.');
 
+      // // B A N N E R------------------------------
+      // admob.banner.config({
+      //   id: "ca-app-pub-3940256099942544/6300978111",
+      //   autoShow: true,
+      //   isTesting: true
+      // })
+      // admob.banner.prepare();
+      // admob.banner.show();
 
+      // // I N T E R S T I T I A L------------------
+      // admob.interstitial.config({
+      //   id: "ca-app-pub-3940256099942544/1033173712",
+      //   autoShow: true,
+      //   isTesting: true
+      // })
+      // admob.interstitial.prepare();
+      // admob.interstitial.show();
 
+      // // R E W A R D   V I D E O - not working
+      // admob.rewardvideo.config({
+      //   // id: 'ca-app-pub-3940256099942544/5224354917', //REWARDED
+      //   id: 'ca-app-pub-3940256099942544/5354046379', // Rewarded Interstitial -ORIG
+      //   autoShow: true,
+      //   isTesting: true
+      // })
+      // admob.rewardvideo.prepare()
+      // admob.rewardvideo.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      // admob.rewardvideo.events.LOAD_FAIL = (e) => {
+      //   alert(`21  ${e}`)
+      // }
 
     }
 
     function showMessage() {
       // display info from Cordova and cordova-plugin-device
-      alert(
-        `Hello World!
-    Running cordova-${cordova.platformId}@${cordova.version}
-    ${device.platform} ${device.version} on ${device.manufacturer}`
-      );
+      console.log(`Running cordova-${cordova.platformId}@${cordova.version}${device.platform} ${device.version} on ${device.manufacturer}`);
     }
-
-
-
-
-
-
-
-
   </script>
 
 

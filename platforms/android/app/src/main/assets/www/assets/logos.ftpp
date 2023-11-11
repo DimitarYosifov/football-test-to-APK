@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "0.6.0"
+  },
+  "savePath": "C:\\projects\\football\\football-new\\static\\assets",
+  "images": [
+    {
+      "name": "PAOK.png",
+      "path": "C:/projects/football/football-new/images/logos/PAOK.png",
+      "folder": ""
+    },
+    {
+      "name": "atletico_madrid.png",
+      "path": "C:/projects/football/football-new/images/logos/atletico_madrid.png",
+      "folder": ""
+    },
+    {
+      "name": "bayern.png",
+      "path": "C:/projects/football/football-new/images/logos/bayern.png",
+      "folder": ""
+    },
+    {
+      "name": "besiktas.png",
+      "path": "C:/projects/football/football-new/images/logos/besiktas.png",
+      "folder": ""
+    },
+    {
+      "name": "dortmund.png",
+      "path": "C:/projects/football/football-new/images/logos/dortmund.png",
+      "folder": ""
+    },
+    {
+      "name": "feyenoord.png",
+      "path": "C:/projects/football/football-new/images/logos/feyenoord.png",
+      "folder": ""
+    },
+    {
+      "name": "inter.png",
+      "path": "C:/projects/football/football-new/images/logos/inter.png",
+      "folder": ""
+    },
+    {
+      "name": "ludogorets.png",
+      "path": "C:/projects/football/football-new/images/logos/ludogorets.png",
+      "folder": ""
+    },
+    {
+      "name": "man_city.png",
+      "path": "C:/projects/football/football-new/images/logos/man_city.png",
+      "folder": ""
+    },
+    {
+      "name": "rangers.png",
+      "path": "C:/projects/football/football-new/images/logos/rangers.png",
+      "folder": ""
+    },
+    {
+      "name": "real_madrid.png",
+      "path": "C:/projects/football/football-new/images/logos/real_madrid.png",
+      "folder": ""
+    },
+    {
+      "name": "roma.png",
+      "path": "C:/projects/football/football-new/images/logos/roma.png",
+      "folder": ""
+    }
+  ],
+  "folders": [],
+  "packOptions": {
+    "textureName": "logos",
+    "textureFormat": "png",
+    "removeFileExtension": true,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "C:\\projects\\football\\football-new\\static\\assets",
+    "width": 2048,
+    "height": 2048,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 0,
+    "extrude": 0,
+    "allowRotation": true,
+    "allowTrim": true,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsBin",
+    "packerMethod": "BestShortSideFit"
+  }
+}

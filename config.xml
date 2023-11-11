@@ -65,8 +65,11 @@
         <preference name="StatusBarStyle" value="default"/>
 
     <plugin name="cordova-plugin-device" spec="^2.1.0" />
-    <!-- <plugin name="cordova-plugin-admobpro"  /> -->
-    <!-- <plugin name="cordova-plugin-admob-free"  /> -->
-    <!-- <plugin name="cordova-plugin-admob-plus"  /> -->
+    <plugin name="cordova-plugin-admob-free">
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-3940256099942544~3347511713" />
+    </plugin> 
+    <plugin name="cordova-plugin-androidx-adapter" />
+    <!-- <plugin name="cordova-plugin-admobpro"  spec="^8.13.1" />  -->
+      <!-- <plugin name="cordova-plugin-admob-plus"  /> -->
 
 </widget>
