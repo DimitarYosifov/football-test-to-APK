@@ -22,8 +22,11 @@
       "PACKAGE_NAME": "com.nsbasic.HelloWorld"
     },
     "cordova-plugin-admob-free": {
-      "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713",
+      "ADMOB_APP_ID": "ca-app-pub-1315918873731360~8601037024",
       "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-admob-inmobi": {
       "PACKAGE_NAME": "com.nsbasic.HelloWorld"
     }
   },

@@ -35,8 +35,21 @@ cordova plugin add cordova-plugin-admobpro --save --variable PLAY_SERVICES_VERSI
 first banner id  = ca-app-pub-1315918873731360/8499883101
 my app id =        ca-app-pub-1315918873731360~8601037024
 
-default google banner unit id = ca-app-pub-3940256099942544/6300978111
-default google app id =         ca-app-pub-3940256099942544~3347511713
+default google banner unit id = ca-app-pub-1315918873731360/8499883101
+default google app id =         ca-app-pub-1315918873731360~8601037024
 
 
-cordova plugin add cordova-plugin-admob-free --save --variable PLAY_SERVICES_VERSION=20.4.0 --variable ADMOB_APP_ID="ca-app-pub-3940256099942544~3347511713"
+cordova plugin add cordova-plugin-admob-free --save --variable PLAY_SERVICES_VERSION=20.4.0 --variable ADMOB_APP_ID="ca-app-pub-1315918873731360~8601037024"
+
+STEPS TO UPLOAD TO VOLDBUILDER:
+RUN BUILD SCRIPT FROM GAME PROJECT
+COPY CONTENT FROM DIST FOLDER (EXCLUDE INDEX.HTML) AND PASTE IT IN WWW FOLDER IN THIS PROJECT
+FROM INDEX.HTML(IN GAME PROJECT) COPY ONLY THIS SCRIPT:
+<script defer src="bundle.js?XXXXXXXXXXXXXX"></script>
+AND PASTE IT IN THIS PRJECT'S INDEX.HTML
+IN ROOT DIR OF THIS PROJECT CREATE ZIP (NOT RAR)
+EXCLUDING NODEMODULES, PLATFORMS AND PLUGINS
+UPLOAD THE ZIP TO https://volt.build/upload/
+
+https://play.google.com/console - google play
+https://apps.admob.com/v2/home  - admob

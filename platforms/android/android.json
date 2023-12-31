@@ -25,7 +25,7 @@
               "count": 1
             },
             {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-3940256099942544~3347511713\" />",
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-1315918873731360~8601037024\" />",
               "count": 1
             }
           ],
@@ -99,8 +99,11 @@
       "PACKAGE_NAME": "com.nsbasic.HelloWorld"
     },
     "cordova-plugin-admob-free": {
-      "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713",
+      "ADMOB_APP_ID": "ca-app-pub-1315918873731360~8601037024",
       "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.nsbasic.HelloWorld"
+    },
+    "cordova-admob-inmobi": {
       "PACKAGE_NAME": "com.nsbasic.HelloWorld"
     }
   },
@@ -168,6 +171,7 @@
     "cordova-plugin-device": "2.1.0",
     "cordova-promise-polyfill": "0.0.2",
     "cordova-admob-sdk": "0.24.1",
-    "cordova-plugin-admob-free": "0.27.0"
+    "cordova-plugin-admob-free": "0.27.0",
+    "cordova-admob-inmobi": "0.0.0"
   }
 }

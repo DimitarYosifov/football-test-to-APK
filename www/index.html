@@ -16,7 +16,7 @@
     content="default-src * file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data:;" />
   <script src="cordova.js"></script>
   <!-- <script type="text/javascript" src="index.js" type="module"></script> -->
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
 
 
 
@@ -38,8 +38,7 @@
 
 
 
-  <script defer src="bundle.js?c7ac6f7a21bc6e52182e"></script>
-
+  <script defer src="bundle.js?98e056d10aed7fdf5796"></script>
 </head>
 
 <body style=" font-family:'Helvetica Neue';">
@@ -56,29 +55,14 @@
 
 
   <img src="images/voltbuilder-150.png">
-  <button style="margin:20px;font-size:20px;" onclick="showMessage()">Click me!</button> -->
+  <!-- <button style="margin:20px;font-size:20px;" onclick="showMessage()">Click me!</button> --> -->
   <script>
     document.addEventListener('deviceready', onDeviceReady, false);
     document.addEventListener('testbanner', showBanner, false);
-    console.log(PIXI);
+    // console.log(PIXI);
 
     function showBanner() {
-      alert();
-      admob.banner.config({
-        id: "ca-app-pub-3940256099942544/6300978111",
-        autoShow: true,
-        isTesting: true
-      })
-      admob.banner.prepare();
-      admob.banner.show();
-    }
-
-    function onDeviceReady() {
-
-      // Cordova is now initialized. Have fun!
-      console.log('instantiation complete.');
-
-      // // B A N N E R------------------------------
+      // alert();
       // admob.banner.config({
       //   id: "ca-app-pub-3940256099942544/6300978111",
       //   autoShow: true,
@@ -86,6 +70,22 @@
       // })
       // admob.banner.prepare();
       // admob.banner.show();
+    }
+
+    function onDeviceReady() {
+
+      // Cordova is now initialized. Have fun!
+      console.log('instantiation complete.');
+
+      // B A N N E R------------------------------
+      admob.banner.config({
+        // id: "ca-app-pub-1315918873731360/8499883101", // my own first test banner unit ID
+        id: "ca-app-pub-3940256099942544/6300978111", // default google banner unit ID
+        autoShow: true,
+        isTesting: true
+      })
+      admob.banner.prepare();
+      admob.banner.show();
 
       // // I N T E R S T I T I A L------------------
       // admob.interstitial.config({
@@ -96,26 +96,26 @@
       // admob.interstitial.prepare();
       // admob.interstitial.show();
 
-      // // R E W A R D   V I D E O - not working
-      // admob.rewardvideo.config({
-      //   // id: 'ca-app-pub-3940256099942544/5224354917', //REWARDED
-      //   id: 'ca-app-pub-3940256099942544/5354046379', // Rewarded Interstitial -ORIG
-      //   autoShow: true,
-      //   isTesting: true
-      // })
-      // admob.rewardvideo.prepare()
-      // admob.rewardvideo.show()
+      // R E W A R D   V I D E O - not working
+      admob.rewardvideo.config({
+        // id: 'ca-app-pub-3940256099942544/5224354917', //default admob REWARDED -WORKING!!! - 5 seconds video//
+        id: 'ca-app-pub-3940256099942544/5354046379', // Rewarded Interstitial -ORIG  - not working
+        autoShow: true,
+        isTesting: true
+      })
+      admob.rewardvideo.prepare()
+      admob.rewardvideo.show()
 
-      // admob.rewardvideo.events.LOAD_FAIL = (e) => {
-      //   alert(`21  ${e}`)
-      // }
+      admob.rewardvideo.events.LOAD_FAIL = (e) => {
+        alert(`21  ${e}`)
+      }
 
     }
 
-    function showMessage() {
-      // display info from Cordova and cordova-plugin-device
-      console.log(`Running cordova-${cordova.platformId}@${cordova.version}${device.platform} ${device.version} on ${device.manufacturer}`);
-    }
+    // function showMessage() {
+    //   // display info from Cordova and cordova-plugin-device
+    //   // console.log(`Running cordova-${cordova.platformId}@${cordova.version}${device.platform} ${device.version} on ${device.manufacturer}`);
+    // }
   </script>
 
 

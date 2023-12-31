@@ -50,7 +50,7 @@
     "is_top_level": true,
     "variables": {
       "PLAY_SERVICES_VERSION": "20.4.0",
-      "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713"
+      "ADMOB_APP_ID": "ca-app-pub-1315918873731360~8601037024"
     }
   },
   "cordova-promise-polyfill": {
@@ -67,6 +67,14 @@
       "id": "cordova-admob-sdk@~0.24.1"
     },
     "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-admob-inmobi": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-admob-inmobi"
+    },
+    "is_top_level": true,
     "variables": {}
   }
 }

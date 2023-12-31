@@ -1,0 +1,31 @@
+{
+  "name": "cordova-admob-inmobi",
+  "version": "0.0.4",
+  "description": "Cordova AdMob Mediation Plugin for InMobi",
+  "scripts": {
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "cordova": {
+    "id": "cordova-admob-inmobi",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": "rehy/cordova-admob-mediation",
+  "author": "Ratson",
+  "license": "MIT",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "admob",
+    "inmobi",
+    "ad"
+  ],
+  "files": [
+    "*.md",
+    "*.xml",
+    "src"
+  ]
+}

@@ -56,7 +56,7 @@ public class AdMobConfig {
     public Location location = null;
 
     // Banner
-    private static final String TEST_BANNER_ID = "ca-app-pub-3940256099942544/6300978111";
+    private static final String TEST_BANNER_ID = "ca-app-pub-1315918873731360/8499883101";
     private String bannerAdUnitId = "";
     public AdSize adSize = AdSize.SMART_BANNER;
     /**

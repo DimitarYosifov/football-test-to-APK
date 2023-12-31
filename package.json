@@ -1,9 +1,15 @@
 {
   "dependencies": {
     "cordova": "^12.0.0",
+    "cordova-admob-inmobi": "0.0.4",
     "cordova-admob-sdk": "0.24.1",
     "cordova-plugin-admob-free": "0.27.0",
-    "cordova-promise-polyfill": "0.0.2"
+    "cordova-promise-polyfill": "0.0.2",
+    "fast-folder-size": "^2.0.0",
+    "tinify": "^1.7.1"
+  },
+  "scripts": {
+    "compressAssets": "node compressAssets.js"
   },
   "cordova": {
     "plugins": {
@@ -16,8 +22,9 @@
       "cordova-plugin-device": {},
       "cordova-plugin-admob-free": {
         "PLAY_SERVICES_VERSION": "20.4.0",
-        "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713"
-      }
+        "ADMOB_APP_ID": "ca-app-pub-1315918873731360~8601037024"
+      },
+      "cordova-admob-inmobi": {}
     },
     "platforms": [
       "android"
